@@ -39,6 +39,9 @@ header .logo{
     background-image: url(../images/logo.png);
     background-size: contain;
     background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: -5px;
     float: left;
 }
 
@@ -108,7 +111,7 @@ nav.mobile-menu ul li a{
 
 .chamada1{
     float: right;
-    margin: 140px 140px;
+    margin: 140px 120px;
     max-width: 600px;
 }
 
@@ -167,17 +170,23 @@ section.section1 .center{
     margin-top: 8px;
 }
 
-.button-section1{
+.button{
     background-color: #FF703D;
     width: 165px;
     height: 44px;
-    color: white;
     cursor: pointer;
     margin-top: 30px;
     border-radius: 30px;
     text-align: center;
     line-height: 44px;
-    font-size: 16px;
+    color: white;    
+    font-size: 17px;
+}
+
+.button a{
+    color: white;    
+    font-size: 17px;
+    text-decoration: none;
 }
 
 .device{
@@ -216,9 +225,10 @@ section.section2 p{
 
 section.section2 img{
     width: 96%;
-    box-shadow: 0px 0px 20px 0px rgb(66, 66, 66);
+    box-shadow: 0px 0px 20px 4px rgba(66, 66, 66, 0.2);
     position: relative;
     top: 100px;
+    border-radius: 5px;
 }
 
 section.section3{
@@ -267,7 +277,7 @@ section.section3{
     float: left;
     width: 50%;
     padding: 160px 4% 90px 4%;
-    background: rgb(252, 247, 255);
+    background: rgb(255, 251, 255);
 }
 
 .part2 h2{
@@ -319,6 +329,113 @@ section.section3{
     cursor: pointer;
 }
 
+section.section4{
+    background-color: #472563;
+    padding: 100px 0;
+}
+
+.form{
+    float: left;
+    width: 50%;
+    color: white;
+    padding: 0 4%;
+}
+
+.form h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.form p{
+    font-size: 16px;
+    font-weight: 300;
+    max-width: 400px;
+    margin-top: 8px;
+}
+
+.form form{
+    margin-top: 15px;
+}
+
+.form form input[type=text]{
+    width: 100%;
+    max-width: 480px;
+    height: 58px;
+    padding-left: 8px;
+    line-height: 58px;
+    margin-top: 8px;
+    border: 2px solid rgb(200, 200, 200);
+    font-size: 17px;
+}
+
+.form form textarea{
+    width: 100%;
+    max-width: 480px;
+    height: 160px;
+    padding: 15px;
+    margin-top: 8px;
+    border: 2px solid rgb(200, 200, 200);
+    font-size: 17px;
+}
+
+.form form .button{
+    font-size: 22px;
+    line-height: 0;
+    border: 0;
+}
+
+.map-wrapper{
+    float: left;
+    color: white;
+    width: 50%;
+    padding: 0 4%;
+}
+
+.map-wrapper h2{
+    font-size: 30px;
+    font-weight: 300;
+}
+
+.map-wrapper3{
+    width: 100%;
+    max-width: 480px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.map-wrapper2{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding-top: 100%;
+}
+
+.map{
+    left: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: white;
+    border: 5px solid rgb(200, 200, 200);
+}
+
+footer{
+    padding: 30px 4%;
+    background: #222830;
+    color: white;
+    font-size: 16px;
+}
+
+footer p:nth-of-type(1){
+    float: left;
+}
+
+footer p:nth-of-type(2){
+    float: right;
+}
+
 @media screen and (max-width: 1330px){
     .part2 h2{
         width: 60%;
@@ -367,6 +484,7 @@ section.section3{
     header{
         width: 100%;
         height: auto;
+        min-height: 550px;
         padding: 40px 2%;
     }
 
@@ -426,7 +544,7 @@ section.section3{
         text-align: left;
     }
 
-    .button-section1{
+    .button{
         display: inline-block;
     }
 
@@ -441,6 +559,38 @@ section.section3{
 
     .part1{
         text-align: left;
+    }
+
+    section.section4 .center{
+        text-align: center;
+    } 
+
+    .form{
+        float: none;
+        width: 100%;
+    }
+
+    .form p{
+        display: inline-block;
+    }
+
+    .map-wrapper{
+        float: none;
+        width: 100%;
+        margin-top: 20px;
+        padding: 0 4%;
+    }
+
+    .map-wrapper3{
+        display: inline-block;
+        width: 100%;
+        padding-top: 100%;
+    }
+
+    .map-wrapper2{
+        padding-top: 0;
+        height: 100%;
+        max-width: none;
     }
 }
 
@@ -458,4 +608,18 @@ section.section3{
         top: 10px;
         margin-left: 20px;
     }
+
+    footer{
+        text-align: center;
+    }
+    
+    footer p:nth-of-type(1){
+        float: none;
+    }
+    
+    footer p:nth-of-type(2){
+        float: none;
+        margin-top: 8px;
+    }
+    
 }
