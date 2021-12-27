@@ -80,9 +80,11 @@ span.fa-bars{
     margin-right: 20px;
 }
 
+/*
 nav.mobile-menu:hover ul{
     display: block;
 }
+*/
 
 nav.mobile-menu ul{
     display: none;
